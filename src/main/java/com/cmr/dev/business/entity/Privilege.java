@@ -28,12 +28,12 @@ public class Privilege implements IEntity {
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "ID_AKDEMIA_USER")
+    @JoinColumn(name = "ID_USER")
     private User user;
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "ID_AKDEMIA_ROLE")
+    @JoinColumn(name = "ID_ROLE")
     private Role role;
 
     public Privilege() {
